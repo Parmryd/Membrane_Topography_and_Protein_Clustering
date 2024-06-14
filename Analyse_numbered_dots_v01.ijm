@@ -1,8 +1,8 @@
 /* 
-Analyze clustered dots 
+Analyzes clustered dots. 
 Images made from sets with sequentially labelled dots with separate number sequences for dots inside and outside clusters - see macro Add_Dots_v01.ijm
 Pick and mix - adjust total numbers & ratios (partitioning cluster:outside).
-Calculate difference     ver26 change LUT (line218)
+Calculate difference.
 For images that have a selection the clusters are loaded first.
 Standardized names i.e. 3-ClusterA.tif where the prefix is the dataset number, A and B for pairs.
 
@@ -347,7 +347,7 @@ rad=20;
 	if (gau==0) newgnam='Green linear rad '+rad;
 	rename(newgnam);
 	grnGauID=getImageID();
-		run("24 step intensity3"); // LUT
+//		run("24 step intensity3"); // LUT
 		run("Enhance Contrast", "saturated=0.35");
 
 	selectImage(redOrigID);
@@ -358,7 +358,7 @@ rad=20;
 	if (gau==0) newrnam='Red lin rad-'+rad;
 	rename(newrnam);
 	redGauID=getImageID();
-		run("24 step intensity3"); // LUT
+//		run("24 step intensity3"); // LUT
 		run("Enhance Contrast", "saturated=0.35");
 
 	//imageCalculator("Divide create 32-bit", grnGauID,redGauID);
