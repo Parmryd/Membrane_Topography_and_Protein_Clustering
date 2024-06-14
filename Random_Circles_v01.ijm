@@ -1,10 +1,10 @@
-/* Add random circles
+/* Adds random circles.
+The  number of circles, their radius and the image size form the name of the final ROI.
 
 Problems? Contact Jeremy Adler <jeremy.adler@igp.uu.se> or Ingela Parmryd <ingela.parmryd@gu.se>
 
-NOTE  calls randomJ plugin that requires the imagescience plugin version 3.0.0 or higher,
+Calls the RandomJ plugin that requires the imagescience plugin version 3.0.0 or higher,
 both are found at https://imagescience.org/meijering/software/randomj and the developer should be acknowledged as stated on the webpage.
-The  number of circles, their radius and the image size form the final ROIs name.
 */
 
 roiManager("reset");
