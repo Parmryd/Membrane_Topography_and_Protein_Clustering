@@ -1,16 +1,15 @@
 /* 
 Nearest neighbor analysis   - missing fluorophores.
 Output all data for box and whisker plot.
-Random distributions
 600x600 image, uses only central 512x512 for analysis.
 Creates a random only set and a set of random & adjacent localisations.
 Adjacent localisations positioned at one of the eight neighbors.
-Localisations not permitted to coincide - max one molecule per pixel.
-
-Problems? Contact Jeremy Adler <jeremy.adler@igp.uu.se> or Ingela Parmryd <ingela.parmryd@gu.se>
+Localisations are not permitted to coincide - max one molecule per pixel.
 
 This macro uses the plugin RandomJ that can be found at
 https://imagescience.org/meijering/software/randomj/ and the developer should be acknowledged as stated on the webpage.
+
+Problems? Contact Jeremy Adler <jeremy.adler@igp.uu.se> or Ingela Parmryd <ingela.parmryd@gu.se>
 */
 
 // Tidy up
